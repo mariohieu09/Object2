@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class Apple{
+    constructor(weigth) {
+      this.weigth = weigth;
+    }
+    gotEaten(){
+      this.weigth--;
+    }
+    getAppleinfo(){
+        document.write("Qua tao con: " + this.weigth + " dv" + "<br>");
+
+    }
+  }
+  class Human{
+    constructor(name, gender, weigth) {
+      this.name = name;
+      this.gender = gender;
+      this.weigth = weigth;
+      this.check = function (apple){
+        apple.getAppleinfo();
+      }
+      this.eat = function (apple){
+          apple.gotEaten();
+          this.weigth++;
+          document.write(this.name + " an tao." + "<br>")
+      }
+      this.getWeigth = function (){
+          document.write("Can nang cua " + this.name + " :" + this.weigth + "<br>");
+
+
+      }
+    }
+  }
+  let apple = new Apple(10);
+  let Eva = new Human("Eva", "Female", 100);
+  let Adam = new Human("Adam", "Male", 88);
+  Eva.eat(apple);
+  apple.getAppleinfo();
+  Eva.getWeigth();
+  Adam.eat(apple);
+  apple.getAppleinfo();
+  Adam.getWeigth();
+  Eva.eat(apple);
+  apple.getAppleinfo();
+  Eva.getWeigth();
+  Adam.eat(apple);
+  apple.getAppleinfo();
+  Adam.getWeigth();
+  Eva.eat(apple);
+  apple.getAppleinfo();
+  Eva.getWeigth();
+  Adam.eat(apple);
+  apple.getAppleinfo();
+  Adam.getWeigth();
+  Eva.eat(apple);
+  apple.getAppleinfo();
+  Eva.getWeigth();
+  Adam.eat(apple);
+  apple.getAppleinfo();
+  Adam.getWeigth();
+  Eva.eat(apple);
+  apple.getAppleinfo();
+  Eva.getWeigth();
+  Adam.eat(apple);
+  apple.getAppleinfo();
+  Adam.getWeigth();
+
+
+
+
+</script>
+
+</body>
+</html>

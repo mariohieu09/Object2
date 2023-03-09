@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+  class person{
+    constructor(firstN, lastN, age, gender, interest){
+      this.first = firstN;
+      this.last = lastN;
+      this.age = age;
+      this.gender = gender;
+      this.interest = interest;
+      this.Bio = function (){
+        alert("Hi my name is " + firstN + lastN + " .I'm " + age + " years old" + ". I play " + interest) ;
+      }
+    }
+  }
+  let hieu = new person("Hieu", "Tran" , "22", "male", "soccer");
+  hieu.Bio();
+  let hoang = new person("Hoang", "ai", "32", "female", "buchim");
+  // hoang.Bio();
+
+</script>
+
+</body>
+</html>
